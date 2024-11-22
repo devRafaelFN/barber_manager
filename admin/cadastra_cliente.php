@@ -4,9 +4,10 @@ include_once("../config.inc.php");
 
 $nome = $_REQUEST['nome'];
 $telefone = $_REQUEST['telefone'];
+$usuario = $_REQUEST['usuario'];
 $senha = $_REQUEST['senha'];
 
-$sql = "INSERT INTO clientes (nome, telefone, senha) VALUES ('$nome','$telefone','$senha')";
+$sql = "INSERT INTO clientes (nome, telefone, usuario, senha) VALUES ('$nome','$telefone','$usuario','$senha')";
 
 $query = mysqli_query($conexao, $sql);
 

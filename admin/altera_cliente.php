@@ -6,7 +6,7 @@ $id = $_REQUEST['id'];
 $nome = $_REQUEST['nome'];
 $telefone = $_REQUEST['telefone'];
 
-$sql = "UPDATE cliente SET nome = '$nome', telefone = '$telefone' WHERE id = '$id' ";
+$sql = "UPDATE clientes SET nome = '$nome', telefone = '$telefone' WHERE id = '$id' ";
 
 $query = mysqli_query($conexao, $sql);
 

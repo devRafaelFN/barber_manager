@@ -1,4 +1,4 @@
-<form action="login.php" method="get">
+<form action="login.php" method="post">
 
     Usuário: <input type="text" name="usuario"><br>
 

@@ -4,7 +4,7 @@
 
     $id = $_REQUEST['id'];
 
-    $sql = "SELECT * FROM cliente WHERE id = $id";
+    $sql = "SELECT * FROM clientes WHERE id = $id";
 
     $query = mysqli_query($conexao,$sql);
 
@@ -16,7 +16,7 @@
 <form action="?pg=altera_cliente&id=<?= $cliente['id'];?>" method="post">
   
   Nome: <input type="text" name="nome" value="<?= $cliente['nome'];?>"> <br>
-  Telefone: <input type="text" name="telefone" value="<?= $cliente['numero'];?>"> <br>
+  Telefone: <input type="text" name="telefone" value="<?= $cliente['telefone'];?>"> <br>
 
  <input type="submit" value="Alterar">
 </form>

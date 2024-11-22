@@ -17,7 +17,8 @@
     
     <a href="?pg=inicial"> Página Inicial </a> |
     <a href="?pg=lista_clientes">Clientes </a> |
-    <a href="?pg=encerrar_sessao">Sair </a>  |
+    <a href="?pg=sair">Sair</a>
+
 
   
 </nav>

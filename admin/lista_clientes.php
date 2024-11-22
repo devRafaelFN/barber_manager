@@ -8,11 +8,11 @@
 
     $sql = mysqli_query($conexao,"SELECT * FROM clientes");
 
-    while($cliente = mysqli_fetch_array($sql)){
-        echo "Nome: $cliente[nome] <br>";
-        echo "Telefone: $cliente[telefone] <br>";
-        echo "<a href=?pg=excluir_cliente&id=$cliente[id]><b>[X] Excluir</b></a>";
-        echo "<a href=?pg=form_altera_cliente&id=$cliente[id]><b>[v] Alterar</b></a>";
+    while($clientes = mysqli_fetch_array($sql)){
+        echo "Nome: $clientes[nome] <br>";
+        echo "Telefone: $clientes[telefone] <br>";
+        echo "<a href=?pg=excluir_cliente&id=$clientes[id]><b>[X] Excluir</b></a>";
+        echo "<a href=?pg=form_altera_cliente&id=$clientes[id]><b>[v] Alterar</b></a>";
         echo "<hr>";
     }
 
