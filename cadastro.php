@@ -4,10 +4,10 @@ include_once('config.inc.php');
 
 $nome = $_REQUEST['nome'];
 $telefone = $_REQUEST['telefone'];
-$login = $_REQUEST['login'];
+$usuario = $_REQUEST['usuario'];
 $senha = $_REQUEST['senha'];
 
-$sql = "INSERT INTO clientes (nome, telefone, login, senha) VALUES ('$nome','$telefone','$login','$senha')";
+$sql = "INSERT INTO clientes (nome, telefone, usuario, senha) VALUES ('$nome','$telefone','$usuario','$senha')";
 
 $query = mysqli_query($conexao, $sql); //executando comando Solicitado na variavel "$sql" 
 
