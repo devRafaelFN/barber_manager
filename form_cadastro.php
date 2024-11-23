@@ -9,8 +9,9 @@
     <input type="submit" value="Cadastrar"><br>
 
 
-    <h6>Já tem uma conta? </h6>
-    <a href="admin/form_login.php">Login</a> 
+    <p>Já tem uma conta? <a href="admin/form_login.php">Login</a></p>
+    <a href="index.php">Voltar</a>
+     
 
     
 </form>
