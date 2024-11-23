@@ -10,7 +10,7 @@
         <p>Oferecemos os melhores serviços de corte de cabelo e barba com qualidade e profissionalismo.</p>
 
         <div class="imagem-container">
-            <img src="imagem.barber.png" alt="Imagem da Barbearia" width="420" height="100">
+            <img src="imagens/imagem.barber.jpg" alt="Imagem da Barbearia" width="420" height="100">
         </div>
 
 
