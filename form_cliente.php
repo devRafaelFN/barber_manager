@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Cadastro de Cliente</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,7 +37,7 @@
             margin-bottom: 5px;
             display: block;
         }
-        input[type="text"], input[type="number"], input[type="password"] {
+        input[type="text"], input[type="password"] {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -73,7 +73,7 @@
 </head>
 <body>
 
-    <form action="?pg=cadastro" method="post">
+    <form action="?pg=cadastra_cliente" method="post">
         <h3>CADASTRE-SE</h3>
         
         <div class="message">
@@ -84,7 +84,7 @@
         <input type="text" name="nome" id="nome" required>
 
         <label for="telefone">Telefone:</label>
-        <input type="number" name="telefone" id="telefone" required>
+        <input type="text" name="telefone" id="telefone" required>
 
         <label for="usuario">Usuário:</label>
         <input type="text" name="usuario" id="usuario" required>
@@ -93,9 +93,6 @@
         <input type="password" name="senha" id="senha" required>
 
         <input type="submit" value="Cadastrar">
-
-        <p>Já tem uma conta? <a href="admin/form_login.php">Login</a></p>
-        <p><a href="index.php">Voltar</a></p>
     </form>
 
 </body>
