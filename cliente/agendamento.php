@@ -14,9 +14,9 @@ $observacao = $_REQUEST['observacao'];
 $sql = "INSERT INTO agenda (nome, horario, data, observacao)
         VALUES ('$nome', '$horario', '$data', '$observacao')";
 
-$resultadoquery = mysqli_query($conexao, $sql); // Executando o SQL;
+$query = mysqli_query($conexao, $sql); // Executando o SQL;
 
-if ($resultadoquery) {
+if ($query) {
     echo "<h3>Agendamento feito com sucesso!</h3>";
 } else {
     echo "Erro no agendamento, data ou horário já ocupados ou entre em contato conosco!";
