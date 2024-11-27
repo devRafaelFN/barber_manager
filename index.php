@@ -1,9 +1,7 @@
 <?php
 
-include_once('templates/topo.php');
-include_once('templates/menu.php');
-
 if(empty($_SERVER['QUERY_STRING'])){
+    include_once('templates/topo.php');
     $var = "inicial.php";
     include_once($var);
 }
