@@ -13,9 +13,9 @@ $tempo_execucao = $_REQUEST['tempo_execucao'];
 
 $sql = "UPDATE cortes SET nome = '$nome_do_corte', valor = '$valor_do_corte', tempo = '$tempo_execucao' WHERE id = '$id' ";
 
-$resultadoquery = mysqli_query($conexao, $sql);
+$query = mysqli_query($conexao, $sql);
 
-if ($resultadoquery) {
+if ($query) {
 
     echo "<h2> Corte Alterado com êxito!</h2>";
 }
