@@ -13,9 +13,9 @@ $valor = $_REQUEST['valor'];
 $sql = "INSERT INTO cortes (nome, tempo, valor)
         VALUES ('$nome_do_corte', '$tempo_execucao', '$valor')";
 
-$resultadoquery = mysqli_query($conexao, $sql); // Executando o SQL;
+$query = mysqli_query($conexao, $sql); // Executando o SQL;
 
-if ($resultadoquery) {
+if ($query) {
     echo "<h3>Corte cadastrado!</h3>";
 } else {
     echo "<h3>Erro no cadastro, verifique novamente os campos preenchidos!";
