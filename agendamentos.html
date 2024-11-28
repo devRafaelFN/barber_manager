@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia - Escolha Seu Corte</title>
+    <link rel="stylesheet" href="telas-css/agendamento.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Barbearia</h1>
+        <p>Escolha seu corte e agende o horário perfeito</p>
+    </header>
+    <main>
+        <section class="modelos">
+            <h2>Modelos de Corte</h2>
+            <div class="modelos-grid">
+                <div class="modelo">
+                    <img src="https://res.cloudinary.com/beleza-na-web/f_auto,fl_progressive,q_auto:eco/v1/loucas/wordpress/prod/sites/1/2023/12/12182018/blz_conteudo_loucas_2023_dezembro_interna_2024-e-os-cortes-masculinos-tendencias_1.jpg" alt="Corte 1">
+                    <p>Sufista</p>
+                    <p>R$ 15,00</p>
+                </div>
+                <div class="modelo">
+                    <img src="https://osegredo.com.br/wp-content/uploads/2023/08/Veja-25-modelos-de-corte-low-fade-masculino-para-voce-se-inspirar-imagem-8-1.jpg.webp" alt="Corte 2">
+                    <p>Degrade navalhado</p>
+                    <p>R$ 18,00</p>
+                </div>
+                <div class="modelo">
+                    <img src="https://notamasculina.com.br/wp-content/uploads/2024/07/564c4f026d8246175f5e31e300b98711-300x300.jpg" alt="Corte 3">
+                    <p>Corte do Jaca</p>
+                    <p>R$ 20,00</p>
+                </div>
+                <div class="modelo">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-cMJQuePucTj5pRU3tndAQW64rCIKJeg_V0ANIteBqbAaXPJU9sEeECSKA-3v3ios3-yZhFpDnihXulTG8viTHw8R9VD3nBNMK8XxsCkBwmRMdKPCWML0Zmx2HFUPmqDY498ZVVKh0ewlv7ywJAT1V7gmaYyxPovkZe8QdsNWoxoq6zXp3Pbyxe6h/s705/barba-degrade%20(1).jpg" alt="Corte 4">
+                    <p>Degrade + Barba</p>
+                    <p>R$ 25,00</p>
+                </div>
+                <div class="modelo">
+                    <img src="https://i.pinimg.com/564x/d5/74/d4/d574d49b4d6d9f117dc2514b27798c03.jpg" alt="Corte 5">
+                    <p>Degrade com luzes + Barba</p>
+                    <p>R$ 30,00</p>
+                </div>
+                <div class="modelo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREgLvrF00mhUXBEc1UyrmxN5YZs5dMXM66rg&s" alt="Corte 6">
+                    <p>Calvao de cria</p>
+                    <p>R$ 32,00</p>
+                </div>
+            </div>
+        </section>
+        <section class="horarios">
+            <h2>Horários Disponíveis</h2>
+            <div class="horarios-grid">
+                <div class="horario">
+                    <p>09:00 - 09:30</p>
+                    <button class="reservar" onclick="reservarHorario('09:00 - 09:30')">Reservar</button>
+                </div>
+                <div class="horario">
+                    <p>09:30 - 10:00</p>
+                    <button class="reservar" onclick="reservarHorario('09:30 - 10:00')">Reservar</button>
+                </div>
+                <div class="horario">
+                    <p>10:00 - 10:30</p>
+                    <button class="reservar" onclick="reservarHorario('10:00 - 10:30')">Reservar</button>
+                </div>
+                <div class="horario">
+                    <p>10:30 - 11:00</p>
+                    <button class="reservar" onclick="reservarHorario('10:30 - 11:00')">Reservar</button>
+                </div>
+                <div class="horario">
+                    <p>11:00 - 11:30</p>
+                    <button class="reservar" onclick="reservarHorario('11:00 - 11:30')">Reservar</button>
+                </div>
+                <div class="horario">
+                    <p>11:30 - 12:00</p>
+                    <button class="reservar" onclick="reservarHorario('11:30 - 12:00')">Reservar</button>
+                </div>
+                <div class="horario">
+                    <p>13:00 - 13:30</p>
+                    <button class="reservar" onclick="reservarHorario('13:00 - 13:30')">Reservar</button>
+                </div>
+                <div class="horario">
+                    <p>13:30 - 14:00</p>
+                    <button class="reservar" onclick="reservarHorario('13:30 - 14:00')">Reservar</button>
+                </div>
+                <div class="horario">
+                    <p>14:00 - 14:30</p>
+                    <button class="reservar" onclick="reservarHorario('14:00 - 14:30')">Reservar</button>
+                </div>
+                <div class="horario">
+                    <p>14:30 - 15:00</p>
+                    <button class="reservar" onclick="reservarHorario('14:30 - 15:00')">Reservar</button>
+                </div>
+                <div class="horario">
+                    <p>15:00 - 15:30</p>
+                    <button class="reservar" onclick="reservarHorario('15:00 - 15:30')">Reservar</button>
+                </div>
+                <div class="horario">
+                    <p>15:30 - 16:00</p>
+                    <button class="reservar" onclick="reservarHorario('15:30 - 16:00')">Reservar</button>
+                </div>
+                <div class="horario">
+                    <p>16:00 - 16:30</p>
+                    <button class="reservar" onclick="reservarHorario('16:00 - 16:30')">Reservar</button>
+                </div>
+                <div class="horario">
+                    <p>16:30 - 17:00</p>
+                    <button class="reservar" onclick="reservarHorario('16:30 - 17:00')">Reservar</button>
+                </div>
+                <div class="horario">
+                    <p>17:00 - 17:30</p>
+                    <button class="reservar" onclick="reservarHorario('17:00 - 17:30')">Reservar</button>
+                </div>
+                <div class="horario">
+                    <p>17:30 - 18:00</p>
+                    <button class="reservar" onclick="reservarHorario('17:30 - 18:00')">Reservar</button>
+                </div>
+            </div>
+        </section>
+        <section class="msg">
+            <h1>Alguma duvida? <a href="https://whatsapp.com/dl/"  target="_blank" rel="next">Fale conosco</a></h1>
+            
+        </section>
+    </main>
+    <script>
+        function reservarHorario(horario) {
+            alert('Você selecionou o horário: ' + horario);
+        }
+    </script>
+</body>
+</html>
