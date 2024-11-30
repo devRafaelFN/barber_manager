@@ -1,3 +1,7 @@
+<head>
+  <link rel="stylesheet" href="../estilo/cadastro.css">
+</head>
+
 <h3>CADASTRE-SE</h3>
 
 <form action="?pg=cadastra_cliente" method="post">
@@ -10,3 +14,4 @@
  <input type="submit" value="Cadastrar">
  
 </form>
+
