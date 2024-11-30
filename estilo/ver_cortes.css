@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h3 {
+    color: #333;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.btn-cadastro {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1em;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin: 10px;
+}
+
+.btn-cadastro:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.corte-details {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.corte-details .corte {
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.corte-details .valor, .corte-details .duracao {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.corte-details a {
+    color: #FF6347;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.corte-details a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e7e7e7;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

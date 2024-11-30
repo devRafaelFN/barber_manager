@@ -1,27 +1,28 @@
 <head>
-<meta charset="UTF-8">
+
+<link rel="stylesheet" href="../estilo/tela_login.css">
+
      <title>Login</title>
-      <link rel="stylesheet" type="text/css" href="estilo/style.css">
+
 </head>
+<body>
 
-<section class="login">
+    <section class="login">
 
-<h3>Login</h3>
+     <h3>Login</h3>
 
-<p>Acesse sua conta para aproveitar nossos benefícios exclusivos!</p>
+      <p>Acesso exclusivo do barbeiro!</p> 
 
-<form action="login.php" method="post">
-
-    Usuário: <input type="text" name="usuario"><br>
-
-    Senha: <input type="password" name="senha"><br>
-
+<form action="login.php" method="post"> 
+    Usuário: <input type="text" name="usuario"><br> 
+    Senha: <input type="password" name="senha"><br> 
     <input type="submit" value="Entrar">
+ </form> 
 
-</form>
+ <p>Não tem uma conta? <a href="../form_cadastro.php" class="cta-btn">Cadastre-se aqui!</a></p> 
 
-<p>Não tem uma conta? <a href="../form_cadastro.php" class="cta-btn">Cadastre-se aqui!</a></p>
-
+ <a href="../index.php">Voltar</a>
 </section>
+</body>
 
-<a href="../index.php">Voltar</a>
+

@@ -1,12 +1,28 @@
-<h3>MARQUE AQUI SEU HORÁRIO</h3>
+<head>
+    <link rel="stylesheet" href="../estilo/agenda.css">
+    <title>Agendamento</title>
+</head>
 
-<form action="?pg=agendamento" method="post">
-    Nome: <input type="text" name="nome" required><br> 
-    Data: <input type="date" name="data" required><br>
-    Horário: <input type="time" name="hora" required><br>
-    Observação: <input type="text" name="observacao"><br> 
-    
-    <input type="submit" value="MARCAR"><br> 
+<body>
+
+     <header>
+         <h3>MARQUE AQUI SEU HORÁRIO</h3>
+    </header>
+        <div class="main-content">
+
+             <form action="../cliente/agendamento.php" method="post">
+
+             Nome: <input type="text" name="nome" required><br>
+
+             Data e Horário: <input type="datetime-local" name="horario" required><br>
+
+             Observação: <input type="text" name="observacao"><br>
+
+             <input type="submit" value="MARCAR"><br>
 
 
-</form>
+             </form> 
+
+        </div>
+
+</body>

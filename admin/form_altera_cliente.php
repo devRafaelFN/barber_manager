@@ -11,6 +11,12 @@
     while($cliente = mysqli_fetch_array($query)){
 
 ?>
+<head>
+    <title>
+        Alterar Cliente
+    </title>
+    <link rel="stylesheet" href="../estilo/altera_cliente.css">
+</head>
 <h3>Alterar Cliente </h3>
 
 <form action="?pg=altera_cliente&id=<?= $cliente['id'];?>" method="post">
@@ -23,4 +29,9 @@
 
 <?php
     }
+
+include_once('templates/rodape.php'); 
+
 ?>
+
+

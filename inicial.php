@@ -1,10 +1,11 @@
-<html lang="pt-BR"> 
-    <head> <meta charset="UTF-8">
+<head>
+     <meta charset="UTF-8">
      <title>Barber Manager</title>
-      <link rel="stylesheet" type="text/css" href="estilo/style.css">
-     </head>
+      <link rel="stylesheet" href="estilo/inicial.css">
+</head>
 
-<body>
+<body> 
+
     <div class="conteudo-principal">
         <h2>Bem-vindo à Nossa Barbearia!</h2>
         <p>Oferecemos os melhores serviços de corte de cabelo e barba com qualidade e profissionalismo.</p>
@@ -42,4 +43,3 @@
 
 
 </body>
-</html>
