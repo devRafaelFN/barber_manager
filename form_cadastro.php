@@ -1,3 +1,8 @@
+<head>
+    <link rel="stylesheet" href="estilo/cadastro.css">
+    <title>CADASTRO</title>
+</head>
+
 <h3>CADASTRE-SE</h3>
 
 <form action="?pg=cadastro" method="post">
@@ -11,7 +16,8 @@
 
     <p>Já tem uma conta? <a href="admin/form_login.php">Login</a></p>
     <a href="index.php">Voltar</a>
-     
 
     
 </form>
+
+<?= include_once('templates/rodape.php'); ?>
