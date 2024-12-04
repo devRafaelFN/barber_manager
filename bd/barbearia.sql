@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 30/11/2024 às 01:38
+-- Tempo de geração: 04/12/2024 às 22:49
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -38,7 +38,9 @@ CREATE TABLE `agenda` (
 --
 
 INSERT INTO `agenda` (`horario`, `nome`, `observacao`) VALUES
-('2018-05-05 20:00:00', 'rf', 'rf');
+('2018-05-05 20:00:00', 'rf', 'rf'),
+('2024-12-02 23:00:00', 'matheus', 'teste'),
+('2024-12-02 23:00:00', 'rafael', 'teste');
 
 -- --------------------------------------------------------
 
@@ -59,7 +61,8 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`id`, `nome`, `senha`, `usuario`, `telefone`) VALUES
-(9, 'rf', 'rf', 'rf', 123456);
+(9, 'rf', 'rf', 'rf', 123456),
+(15, 'matheus', 'mt', 'matheus', 1232131);
 
 --
 -- Índices para tabelas despejadas
@@ -80,7 +83,7 @@ ALTER TABLE `clientes`
 -- AUTO_INCREMENT de tabela `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
