@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04/12/2024 às 22:49
+-- Tempo de geração: 04/12/2024 às 22:52
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -64,6 +64,28 @@ INSERT INTO `clientes` (`id`, `nome`, `senha`, `usuario`, `telefone`) VALUES
 (9, 'rf', 'rf', 'rf', 123456),
 (15, 'matheus', 'mt', 'matheus', 1232131);
 
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `cortes`
+--
+
+CREATE TABLE `cortes` (
+  `id` int(11) NOT NULL,
+  `corte` varchar(30) NOT NULL,
+  `valor` float NOT NULL,
+  `duracao` time NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `cortes`
+--
+
+INSERT INTO `cortes` (`id`, `corte`, `valor`, `duracao`) VALUES
+(6, 'Disfarçado', 15, '00:20:00'),
+(7, 'Moicano', 20, '00:32:00'),
+(8, 'social', 15, '00:20:00');
+
 --
 -- Índices para tabelas despejadas
 --
@@ -76,6 +98,12 @@ ALTER TABLE `clientes`
   ADD UNIQUE KEY `usuario` (`usuario`);
 
 --
+-- Índices de tabela `cortes`
+--
+ALTER TABLE `cortes`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT para tabelas despejadas
 --
 
@@ -84,6 +112,12 @@ ALTER TABLE `clientes`
 --
 ALTER TABLE `clientes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT de tabela `cortes`
+--
+ALTER TABLE `cortes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
